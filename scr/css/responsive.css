@@ -1,0 +1,125 @@
+@media(max-width:720px){
+    .header .container{
+        display: block;
+        text-align: center;
+    }
+
+    .header .container .menu nav ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .hero .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 30px 0;
+    }
+    
+    .hero .main img{
+        width: 400px;
+        margin-bottom: 10px;
+    }
+    
+    .hero .main .titulo{
+        text-align: center;
+        width: 200px;
+        font-size: 14px;
+        line-height: normal;
+    }
+    
+    .hero .main .info{ 
+        width: 200px;
+        line-height: normal;
+        font-size: 10px;
+        text-align: center;
+    }
+    
+    .hero .main .start{
+        width: 100px;
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .about img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .coments {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 10px;
+    }
+
+}
+
+@media(max-width:425px){
+    .about img{
+        width: 200px;
+        height: 200px;
+        text-align: center;
+    }
+
+    .about {
+        height: 200px;
+    }
+
+    .about .about-titulo{
+        font-size: 8px;
+        line-height: 0;
+    }
+
+    .about .about-info{
+        margin: 0;
+        text-align: center;
+    }
+
+    .about .about-link{
+        justify-content: center;
+    }
+
+    .coments {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 10px;
+        position: relative;
+        top: 350px;
+    }
+
+}
+
+@media(max-width:1110px){
+    .coments{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px;
+    }
+
+    .coments .position{
+        display: none;
+}
+}
