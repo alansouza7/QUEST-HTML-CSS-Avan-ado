@@ -108,6 +108,11 @@
         top: 350px;
     }
 
+    .footer{
+        top: 400px;
+        display: relative;
+    }
+
 }
 
 @media(max-width:1110px){
@@ -122,4 +127,21 @@
     .coments .position{
         display: none;
 }
+
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0;
+        height: 100px;
+        margin: 0;
+    }
+
+    .footer .item1{
+        margin: 20px;
+    }
+
+    .middle-box{
+        display: none;
+       
+    }
 }
